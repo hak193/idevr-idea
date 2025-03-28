@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - I-DevR CODE</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">
+                    I-DevR CODE
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="builder.html" class="text-gray-700 hover:text-blue-600 transition">App Builder</a>
+                    <a href="#" class="text-blue-600">Blog</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Developer Blog
+            </h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?programming" alt="Modern Web Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 25, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            Modern Web Development: A Guide to Full-Stack Development in 2024
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Explore the latest trends and technologies in full-stack development, from frontend frameworks to backend architectures.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?mobile-app" alt="Mobile App Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 20, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            Building Secure Mobile Applications: Best Practices and Tips
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Learn essential security practices for mobile app development, including authentication, data encryption, and secure API communication.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?ecommerce" alt="E-commerce Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 15, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            E-commerce Solutions: Building Scalable Online Stores
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Discover key considerations and technologies for building robust e-commerce platforms that can handle growth.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?artificial-intelligence" alt="AI Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 10, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            Integrating AI Features in Modern Applications
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            A practical guide to implementing AI capabilities in your applications using modern frameworks and APIs.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?cloud-computing" alt="Cloud Architecture" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 5, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            Cloud Architecture: Designing Scalable Systems
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Learn about modern cloud architecture patterns and best practices for building scalable applications.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?code" alt="Code Quality" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 1, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                            Code Quality and Testing: A Comprehensive Guide
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Essential practices for maintaining high code quality and implementing effective testing strategies.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">I-DevR CODE</h3>
+                    <p class="text-gray-400">Empowering Your Digital Future</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="builder.html" class="text-gray-400 hover:text-white">App Builder</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>15 MONROE AVE</li>
+                        <li>WORCESTER MA, 01602</li>
+                        <li>+1 (508) 668-4378</li>
+                        <li>Brouillard@i-devr.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 I-DevR CODE L.L.C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-DevR CODE - Custom Software Development</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-blue-600">
+                    I-DevR CODE
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-blue-600">Home</a>
+                    <a href="builder.html" class="text-gray-700 hover:text-blue-600 transition">App Builder</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Empowering Your Digital Future
+            </h1>
+            <p class="text-xl md:text-2xl mb-12">
+                Custom Mobile, Web & Ecommerce Solutions
+            </p>
+            <a href="builder.html" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition">
+                Build Your App
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mobile Development -->
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Mobile Development</h3>
+                    <p class="text-gray-600">
+                        Native and cross-platform mobile applications tailored to your needs.
+                    </p>
+                </div>
+                <!-- Web Development -->
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Development</h3>
+                    <p class="text-gray-600">
+                        Modern, responsive websites and web applications.
+                    </p>
+                </div>
+                <!-- E-commerce Solutions -->
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shopping-cart text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Solutions</h3>
+                    <p class="text-gray-600">
+                        Custom online stores and e-commerce platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Us</h2>
+                    <p class="text-gray-600 mb-6">
+                        I-DevR CODE is a leading software development company specializing in creating custom digital solutions. With years of experience and a passionate team of developers, we transform your ideas into reality.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our mission is to empower businesses with cutting-edge technology solutions that drive growth and innovation.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-white rounded-lg text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                            <div class="text-gray-600">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/800x600/?coding" alt="About Us" class="rounded-xl shadow-lg">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-blue-600 rounded-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Latest from Our Blog</h2>
+                <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-medium">
+                    View All Posts <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Featured Blog Post 1 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?programming" alt="Modern Web Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 25, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            Modern Web Development: A Guide to Full-Stack Development
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Explore the latest trends and technologies in full-stack development...
+                        </p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Featured Blog Post 2 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?mobile-app" alt="Mobile App Security" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 20, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            Building Secure Mobile Applications
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn essential security practices for mobile app development...
+                        </p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Featured Blog Post 3 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden">
+                    <img src="https://source.unsplash.com/800x500/?ecommerce" alt="E-commerce Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>March 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            E-commerce Solutions: Building Scalable Stores
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Discover key considerations for building robust e-commerce platforms...
+                        </p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Address</h3>
+                                    <p class="text-gray-600">15 MONROE AVE<br>WORCESTER MA, 01602</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Phone</h3>
+                                    <p class="text-gray-600">+1 (508) 668-4378</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Email</h3>
+                                    <p class="text-gray-600">Brouillard@i-devr.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-32" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">I-DevR CODE</h3>
+                    <p class="text-gray-400">Empowering Your Digital Future</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="builder.html" class="text-gray-400 hover:text-white">App Builder</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>15 MONROE AVE</li>
+                        <li>WORCESTER MA, 01602</li>
+                        <li>+1 (508) 668-4378</li>
+                        <li>Brouillard@i-devr.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 I-DevR CODE L.L.C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - I-DevR CODE</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">
+                    I-DevR CODE
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="builder.html" class="text-gray-700 hover:text-blue-600 transition">App Builder</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Payment Section -->
+    <section class="pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Complete Your Purchase
+            </h1>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Order Summary -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Order Summary</h2>
+                    <div id="orderSummary" class="space-y-6">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Payment Details</h2>
+                    
+                    <!-- Payment Options -->
+                    <div class="mb-8">
+                        <div class="flex items-center justify-between p-4 border rounded-lg bg-blue-50">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-lock text-blue-600 text-xl"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Secure Payment</h3>
+                                    <p class="text-sm text-gray-600">Your payment information is encrypted</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fab fa-cc-visa text-2xl text-gray-600"></i>
+                                <i class="fab fa-cc-mastercard text-2xl text-gray-600"></i>
+                                <i class="fab fa-cc-amex text-2xl text-gray-600"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Messages -->
+                    <div id="error-message" class="hidden mb-4 p-4 bg-red-50 text-red-600 rounded-lg">
+                    </div>
+
+                    <!-- Payment Button -->
+                    <button id="payment-button" 
+                        class="w-full py-3 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2">
+                        <i class="fas fa-lock"></i>
+                        <span>Pay Now</span>
+                    </button>
+
+                    <p class="mt-4 text-sm text-gray-500 text-center">
+                        By clicking "Pay Now", you agree to our 
+                        <a href="#" class="text-blue-600 hover:underline">Terms of Service</a> and 
+                        <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">I-DevR CODE</h3>
+                    <p class="text-gray-400">Empowering Your Digital Future</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="builder.html" class="text-gray-400 hover:text-white">App Builder</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>15 MONROE AVE</li>
+                        <li>WORCESTER MA, 01602</li>
+                        <li>+1 (508) 668-4378</li>
+                        <li>Brouillard@i-devr.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 I-DevR CODE L.L.C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
